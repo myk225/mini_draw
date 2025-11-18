@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mini Draw — Realtime</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <input id="room" placeholder="room id (e.g. testroom)" value="testroom" />
+      <input id="name" placeholder="your name" value="guest" />
+      <button id="joinBtn">Join</button>
+      <button id="clearBtn">Clear</button>
+      <span id="status">disconnected</span>
+      <div id="presence"></div>
+    </div>
+
+    <canvas id="board"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
